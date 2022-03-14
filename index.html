@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>학원에서 배우는 것</title>
+    <style>
+        li {margin-bottom: 15px;border-bottom: 1px solid#ddd;}
+    </style>
 </head>
 <body>
     <h1>HTML / CSS / JOUERY document</h1>
@@ -13,11 +16,160 @@
 
     <h2>HTML / CSS</h2>
 
+    <ol>
+        <li>
+            <a href="./boc/box01.html" target="_blank">box-model 01</a>
+            <p>첫 수업은 박스 모델에 대한 설명... <br>박스는 늘어난다. width: auto, height:auto <br>
+                -박스 모델에 대한 첫걸음
+            </p>
+            <em>2022.03.04</em>
+        </li>
+        <li>
+            <a href="./boc/box02.html" target="_blank">box-model 02</a>
+            <p>박스모델 02 - 요소를 좌우 가운데 위치시키기 <br>
+               
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./boc/box03.html" target="_blank">box-model 03</a>
+            <p>박스모델 03 - 요소를 겹쳐서 사용하기<br>
+                박스는 겹쳐 쓸수있다. 부모 자식 관계를 가진다 <br>
+                ul사용(번호달기)
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./boc/display01.html" target="_blank">display 01</a>
+            <p>display에 대한 기본적인 설명, 반응형 구현 일부 display와 position의 조합 <br>
+                -반응형 구현의 기본적인 구성을 배울 수 있었다.
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./boc/flex01.html" target="_blank">flex 01</a>
+            <p>플렉스01 - box를 가로로 배치하는 방법01 <br>
+                -float - 요소들을 가로배치하는 방법1<br>
+                2. 뜨오른다. 부모 요소의 높이를 0으로 만든다.<br>
+                3. clearfix를 사용해서 부모요소로 담겨진다. 부모:after {content:"";display:block;clear:both}            
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./boc/flex02.html" target="_blank">flex 02</a>
+            <p>플렉스02 - box를 가로로 배치하는 방법02 <br>
+            색동저고리 <br>
+            A,B,C 상자를 만들어 -ABC-, --ABC, ABC--, A--BC, AB-C, A-B-C 배열등   상단 카테고리를 만들때 써먹을수 있는 배치        
+            </p>
+            <em>2022.03.11</em>
+        </li>
+        <li>
+            <a href="./boc/flex03.html" target="_blank">flex 03</a>
+            <p>플렉스03 - 스와로브스키 사이트 예제 연습 <br>
+                사이트 메인 만들기 - 더곱이네로 실습 <br>
+                (백그라운드에 사진깔기)
+        
+            </p>
+            <em>2022.03.11</em>
+        </li>
+        <li>
+            <a href="./boc/float01.html" target="_blank">float 01</a>
+            <p>플롯01 - box를 가로로 배치하는 방법01 <br>
+                float - 요소들을 가로배치하는 방법1<br> 
+                 1. 쪼그라든다.<br>
+                 2. 뜨오른다. 부모 요소의 높이를 0으로 만든다.<br>
+                 3. clearfix를 사용해서 부모요소로 담겨진다.<br> 부모:after {content:""; display:block; clear:both}
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./boc/font01.html" target="_blank">font 01</a>
+            <p>웹폰트 사용하기 <br>
+                웹폰트 가져오기  <br>
+                웹폰트 적용하기 예제
+            </p>
+            <em>2022.03.08</em>
+        </li>
+        <li>
+            <a href="./boc/layout01.html" target="_blank">layout 01</a>
+            <p>기본 레이아웃01-3<br>
+                메인화면의 기본 틀 연습  <br>
+                figure(사진+글)box 3개 나란히 배열하기
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./boc/layout02.html" target="_blank">layout 02</a>
+            <p>기본 레이아웃02<br>
+                메인화면의 기본 틀 연습-2  <br>
+                기본레이아웃01의 적용, box수의 변화에 따른 반복배치 <br>
+                ------조퇴로 인해 미완성이지만 시간날때 해 볼것--------
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./boc/position01.html" target="_blank">position 01</a>
+            <p>포지션01 - 기초편<br>
+                position: static - 포지션이 아니게 한다 <br>
+                position: absolute - 좌표를 가진다 - top,left,bottom,right;
+                (뜬다, 쪼그라든다. body가 기준이 된다.) <br>
+                position: relative - 기준이 된다. 좌표를 가진다.. 떠오르지않고 공간을 차지한다. 쪼그라들지 않는다. <br>
+                position: fixed - 화면을 기준으로 떠오른다 좌표를 가진다. 다른기준따위는 없다. <br>
+                position sticky: 좀 어려운데 박스처럼 있다가 마우스를 내리면 픽스드가 된다.
+            </p>
+            <em>2022.03.10</em>
+        </li>
+        <li>
+            <a href="./boc/position02.html" target="_blank">position 02</a>
+            <p>포지션02 <br>
+                
+            </p>
+            <em>2022.03.11</em>
+        </li>
+        <li>
+            <a href="./boc/webicon01.html" target="_blank">webicon 01</a>
+            <p>웹아이콘 사용하기 01 <br>
+                웹특수문자(xeicon)을 가져와 동그란 아이콘 만들기
+            </p>
+            <em>2022.03.08</em>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>layout</h2>
+
     <ul>
         <li>
-            <a href="./boc/box01.html" target="_blank">box-model</a>
-            <p>첫 수업은 박스 모델에 대한 설명...</p>
+            <a href="./all_layout01.html">기본레이아웃 01</a>
+            <a href="./css/all_layout01.css"></a>
+            <a href="./js/all_layout01.js"></a>
+            <a href="./css/slick.css"></a>
+            <a href="./css/slick.css"></a>
+            <p>
+                기본 레이아웃 짜기 : 큰 틀 만들기..
+                헤더-메인-풋터=3등분 <br>
+                css파일과 js파일 적용
+            </p>
+            <em>2022.03.14</em>
+        </li>
+        <li>
+            <a href="./all_layout02.html">기본레이아웃 02-slick을 이용한 기본 슬라이더</a>
+            <a href="./css/all_layout02.css"></a>
+            <a href="./js/all_layout02.js"></a>
+            <a href="./css/slick.css"></a>
+            <a href="./css/slick.css"></a>
+            <p>
+                기본 슬라이더 짜기 - slick
+                슬라이더에 필요한 버튼 만들고 배치: 좌우화살표, 중간하단n칸네모박스, xeicon 적용 등
+            </p>
+            <em>2022.03.14</em>
         </li>
     </ul>
+
+
+
+
+
  </body>
 </html>
