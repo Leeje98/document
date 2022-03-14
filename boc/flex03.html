@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스03</title>
+    <style>
+
+      * {margin: 0;padding: 0;box-sizing: border-box;}
+      ul {list-style:none;}
+      a {color: #fff;}
+      body {
+          font-family: 'Noto Sans KR', sans-serif;
+          color: #444
+       
+      }
+
+
+      .headerWrap {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+      }
+
+      .topBanner {
+          background: #333;
+          color: #fff;
+          font-size: 15px;
+          padding: 5px 15px;
+      }
+
+      .topBanner .inner {
+          display: flex;
+          justify-content: space-between;
+          width: 1200px;
+          margin: 0 auto;
+      }
+
+      .topBanner ul {
+          display: flex;
+      }
+
+      .topBanner .left li {
+          margin-right: 30px;
+      }
+
+      .topBanner .right {
+          gap:30px
+      }
+
+      .topBanner .right li {
+          position: relative;
+      }
+
+      .topBanner .right li~li::before {
+          content:"";
+          display: block;
+          width: 1px;
+          height: 12px;
+          background: #ddd;
+          position: absolute;
+          top: 50%;
+          left:-15px;
+          transform: translateY(-50%);
+      }
+
+      .headerWrap h1 {
+          padding: 20px 0;
+          text-align: center;
+      }
+
+      .headerWrap h1 img {
+          width: 250px;
+      }
+
+      .gnb {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      .gnb ul {
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          width: 1200px;
+          color: #fff;
+          margin: 0 auto;
+          line-height: 50px;
+      }
+
+      .mainVisual {
+          height: 100vh;
+          background: url(../boc/img/main_slider_n05.jpg) no-repeat center center/cover;
+          background-image:url(../boc/img/main_slider_n05.jpg);
+          background-repeat;
+          background: ;
+      }
+
+      .mainVisual .slogan {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 1200px;
+          padding: 0 15px;
+          color: #fff;
+          /* text-align: ; */
+      }
+
+      .maincontent {
+          padding: 100px 0;
+          text-align: center;
+      }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="Wrap">
+    <header class="headerWrap">
+        <div class="topBanner">
+            <div class="inner">
+
+                <ul class="left">
+                    <li><a href="#!">KOR</a></li>
+                    <li><a href="#!">STORE</a></li>
+                </ul>
+                <ul class="right">
+                    <li> <a href="#!">SWAROVSKI</a></li>
+                    <li> <a href="#!">SCS</a></li>
+                    <li> <a href="#!">LOGIN</a></li>
+                </ul>
+    
+            </div>
+        </div>
+        <h1>
+           <a href="#!"><img src="./img/logo.png" alt=""></a>
+        </h1>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#!">NEW IN</a></li>
+                <li><a href="#!">JEWELRY</a></li>
+                <li><a href="#!">WATCHES</a></li>
+                <li><a href="#!">ACCESSPROES</a></li>
+                <li><a href="#!">DECPRATOPNS</a></li>
+                <li><a href="#!">GOFTS</a></li>
+                <li><a href="#!">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+   <main>
+       <section class="mainVisual">
+           <div class="slogan">
+             <h2>lfjdlsfjlf djflsjflsdfs</h2>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores modi exercitationem velit,<br/> officia minus neque ut sequi soluta molestias aliquid facilis officiis quibusdam quas pariatur eligendi nihil error earum.</p>
+           </div>
+       </section>
+       <section class="maincontent">
+        <h2>lfjdlsfjlf djflsjflsdfs</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores modi exercitationem velit,<br/> officia minus neque ut sequi soluta molestias aliquid facilis officiis quibusdam quas pariatur eligendi nihil error earum.</p>
+        <div class="container">
+            <figure>
+                <div class="inner">
+                    <img src="../boc/img/menu_n01.jpg" alt="">
+                </div>
+                <strong>SWAROVSKI CELEBRATES</strong>
+            </figure>
+            <figure>
+                <div class="inner">
+                    <img src="../boc/img/menu_n02.jpg" alt="">
+                </div>
+                <strong>SWAROVSKI CELEBRATES</strong>
+            </figure>
+            <figure>
+                <div class="inner">
+                    <img src="../boc/img/menu_n03.jpg" alt="">
+                </div>
+                <strong>SWAROVSKI CELEBRATES</strong>
+            </figure>
+        </div>
+          
+       </div>
+   </main>
+
+   <footer class="footerWrap"></footer>
+
+</div>
+</body>
+</html>
