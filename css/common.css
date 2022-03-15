@@ -5,4 +5,5 @@
 * {margin:0;padding:0;box-sizing:border-box;font-size:inherit;font-weight:normal;color:inherit;}
 ul,ol {list-style:none;}
 a {text-decoration:none;}
-body {line-height:1;}
+body {line-height:1;font-family: 'Noto Sans KR', sans-serif;}
+img {vertical-align: middle;}
