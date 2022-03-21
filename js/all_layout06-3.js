@@ -48,7 +48,8 @@ $('.evenetProduct i:nth-of-type(2)').on('click', function(){
     $('.eProductSlide').slick('slickPlay')
 });
 
-//
+
+
 
 $('.aproductSlide').slick({
     arrows: false,
@@ -59,31 +60,6 @@ $('.aproductSlide').slick({
 
 
 
-// $('.allProduct').slick({
-//     centerMode: true,
-//     centerPadding: '60px',
-//     slidesToShow: 3,
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 3
-//         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 1
-//         }
-//       }
-//     ]
-//   });
 
 
 $('.allProduct i:first-child').on('click', function(){
@@ -98,7 +74,7 @@ $('.allProduct i:last-child').on('click', function(){
 
 //유튜브 플레이어를 쓰자
 
-jQuery("#bgndVideo").YTPlayer({
+jQuery("#https://www.youtube.com/watch?v=c8cNgiZDN34").YTPlayer({
     videoURL:'BsekcY04xvQ',
     containment:'.movieBg',
     autoPlay:true, 
@@ -110,12 +86,15 @@ jQuery("#bgndVideo").YTPlayer({
 });
 
 $('.movieBg i:first-child').on('click', function(){
-    $("#bgndVideo").YTPPause();
+    $("#https://www.youtube.com/watch?v=c8cNgiZDN34").YTPPause();
 })
 
 $('.movieBg i:last-child').on('click', function(){
-    $("#bgndVideo").YTPPlay();
+    $("#https://www.youtube.com/watch?v=c8cNgiZDN34").YTPPlay();
 })
+
+
+
 
 
 $('.tabMenu li').on('click', function(){
