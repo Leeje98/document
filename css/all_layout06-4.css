@@ -1,0 +1,866 @@
+.Wrap {}
+
+
+
+/* topBanner 탑배너 공간 */
+/* { topBanner lee 2022.03.17 최종수정 */
+.topBanner {
+    padding: 24px 0;
+    background: #f3f3f3;
+}
+
+.topBanner .container {
+    position: relative;
+    /* background: #ddd; */
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.topBanner .container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 100;
+    /*텍스트 굵기*/
+    letter-spacing: 0.040em;
+    /*자간::글자사이간격:1000으로 나눈수치*/
+}
+
+.topBanner .container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+}
+
+.topBanner .container a {
+    margin-left: 20px;
+    padding: 3px 20px;
+    border: 1px solid #333;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.topBanner .container i {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* topBanner : lee 2022.03.17 최종수정 */
+/* topBanner 탑배너 공간 */
+
+
+/* headerWrap 로고-메뉴-검색창 공간 */
+/* { header : lee 2022.03.17 최종수정 */
+
+.headerWrap {}
+
+.headerWrap .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.headerWrap .container>* {
+    padding: 0 15px;
+}
+
+.headerWrap .searchForm {
+    margin-left: auto;
+}
+
+.gnb {}
+
+.gnb>ul {
+    display: flex;
+}
+
+.gnb>ul>li {
+    position: relative;
+    padding: 0 20px;
+}
+
+.gnb>ul>li~li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 2px;
+    height: 13px;
+    background: #333;
+}
+
+/* .gnb>ul>li:nth-child(1):after {
+    display: none;   ---- 메뉴의 맨처음 ㅣ 를 없애는 것 위의 gnb>ul>li~li::after 의 ~로 대체
+} */
+
+.headerWrap .searchForm input[type="search"] {
+    padding: 3px 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid#333;
+}
+
+.headerWrap .searchForm input[type="search"]::placeholder {
+    color: rgb(158, 62, 153);
+    font-size: 13px;
+}
+
+.headerWrap .searchForm input[type="search"]:focus::placeholder {
+    color: transparent;
+}
+
+.headerWrap .searchForm button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.headerWrap .searchForm button i {
+    font-size: 15px;
+    color: #fff;
+    background: #333;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* headerWrap 로고-메뉴-검색창 공간 */
+
+
+/* 01 mainVisual 메인 슬라이드 공간 */
+
+.mainVisual .visualSlide {
+    border-top: 1px solid #ddd;
+}
+
+.mainVisual .visualSlide figure {
+    position: relative;
+    height: 600px;
+}
+
+.mainVisual .visualSlide figure i {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+
+    font-size: 100px;
+    color: #f00;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainVisual .visualSlide figure.oo i {
+    opacity: 1;
+    animation: heart 1s infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mainVisual .visualSlide .msLeft {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    z-index: 999;
+
+    border-top: 100px solid#fff;
+    border-left: 100px solid transparent;
+
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.mainVisual .visualSlide .msLeft.oo {
+    border-top: 100px solid #333;
+}
+
+.mainVisual .visualSlide .msRight {
+    position: absolute;
+    top: 50%;
+    Right: 200px;
+    z-index: 999;
+
+    border-top: 100px solid#fff;
+    border-left: 100px solid transparent;
+
+    transform: translateY(-50%) rotate(45deg)
+}
+
+.mainVisual .visualSlide .msRigh.oo {
+    border-top: 100px solid #333;
+}
+
+
+.mainVisual .visualSlide figure .inner {
+    width: 1200px;
+    margin: 300px auto 0 auto;
+    padding: 0 15px;
+    color: #fff;
+}
+
+.mainVisual .visualSlide figure.itm02 .inner {
+    color: #333;
+}
+
+.mainVisual .visualSlide figure .inner h3 {
+    opacity: 0;
+    transform: translateY(100px);
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-shadow: 0 0 2px #333;
+    transition: 1s 0.5s;
+}
+
+.mainVisual .visualSlide figure .inner p {
+    opacity: 0;
+    transform: translateY(100px);
+    font-size: 15px;
+    font-weight: 300;
+    transition: 1s 1s;
+}
+
+.mainVisual .visualSlide figure.oo .inner h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mainVisual .visualSlide figure.oo .inner p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mainVisual .visualSlide .itm01 {
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .itm02 {
+    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .itm03 {
+    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+
+.mainVisual .visualSlide .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+}
+
+.mainVisual .visualSlide .slick-dots li {
+    width: 100px;
+    height: 5px;
+    background: #333;
+    transition: 2s;
+}
+
+.mainVisual .visualSlide .slick-dots li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background: #f00;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active {
+    background: #fff;
+}
+
+.mainVisual .visualSlide .slick-dots button {
+    display: none;
+}
+
+/* 01 mainVisual 메인 슬라이드 공간 */
+
+
+
+
+/*  02 mineProduct추천상품 공간 */
+
+.mineProduct {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.mineProduct h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.mineProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.mineProduct .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mineProduct .container figure {
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.mineProduct .container figure .inner {
+    margin-bottom: 15px;
+}
+
+.mineProduct .container figure strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mineProduct .container figure a {
+    display: inline-block;
+    /*width: 120px; - 사이즈가 같아도 글자개수가 많으면 비교적 작아보이기 때문에 와이드 대신 패딩사용*/
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+}
+
+
+.mineProduct .container figure a:hover {
+    background: #ddd;
+    color: #333;
+}
+
+.mineProduct .inner {
+    overflow: hidden;
+}
+
+.mineProduct .inner img {
+    transition: 0.5s;
+}
+
+.mineProduct .inner:hover img {
+    transform: scale(1.5);
+}
+
+.mineProduct .container figure .label {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+
+    border-top: 10px solid#f00;
+    border-left: 50px solid#f00;
+    border-bottom: 10px solid#f00;
+    border-right: 10px solid transparent;
+}
+
+.mineProduct .container figure .label span {
+    position: absolute;
+    top: -6px;
+    left: -45px;
+    color: #fff;
+
+    font-size: 14px;
+}
+
+/*  02 mineProduct추천상품 공간 */
+
+
+
+/*  03 evenBanner이벤트 배너 공간 */
+
+.evenBanner {
+    padding: 100px 0;
+    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    filter: grayscale(1);
+}
+
+.evenBanner h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.evenBanner p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.evenBanner i {
+    padding: 7px;
+    background: #333;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+/*  03 evenBanner이벤트 배너 공간 */
+
+
+
+/*  04 evenetProduct상품(동영상/슬라이드) 공간 */
+
+.evenetProduct {
+    padding: 100px 0;
+}
+
+.evenetProduct .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.evenetProduct .container>div {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.evenetProduct .left {
+    width: 40%;
+}
+
+.evenetProduct .eProductSlide {
+    padding: 5px;
+    border: 5px solid #ddd;
+}
+
+.evenetProduct .right {
+    display: flex;
+    align-items: center;
+
+    width: 60%;
+}
+
+.evenetProduct h3 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20mm;
+    margin-bottom: 10px;
+}
+
+.evenetProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025mm;
+    margin-bottom: 30px;
+}
+
+.evenetProduct i {
+    padding: 13px;
+    background: #333;
+    color: #fff;
+    border-radius: 7px;
+    margin: 0 5px;
+}
+
+/*  04 .evenetProduct상품(동영상/슬라이드) 공간 */
+
+
+
+/*  05 .allProduct여러 상품슬라이드 공간 */
+
+.allProduct {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.allProduct h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.allProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.allProduct .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.allProduct .aproductSlide figure {
+    padding: 0 15px;
+}
+
+
+.allProduct .inner {
+    margin-bottom: 20px;
+}
+
+.allProduct .inner+strong {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+.allProduct .slick-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.allProduct .slick-dots li {
+    width: 13px;
+    height: 13px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.allProduct .slick-dots li.slick-active {
+    background: #f00;
+}
+
+.allProduct .slick-dots li button {
+    display: none;
+}
+
+.allProduct i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    background: #333;
+}
+
+.allProduct i:first-child {
+    margin-left: -700px;
+}
+
+
+.allProduct i:last-child {
+    margin-left: 700px;
+}
+
+
+/*  05 .allProduct여러 상품슬라이드 공간 */
+
+
+
+/*  06 .movieBg 유튜브 동영상 삽입 */
+
+.movieBg {
+    padding: 200px 0;
+    background: #000;
+    filter: grayscale(1);
+
+    color: #fff;
+    text-align: center;
+}
+
+.movieBg h3 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.movieBg p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.movieBg i {
+    font-size: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 10px;
+}
+
+/*  06 .movieBg 유튜브 동영상 삽입 */
+
+
+/*  07 .customerArea 탭메뉴 삽입 */
+
+.customerArea {
+    padding: 100px 0;
+    background: #f2f2f2;
+
+}
+
+
+.customerArea .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.customerArea .container>div {
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.customerArea .container>div .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 30px;
+
+    background: #9acd32;
+    border: 3px solid #9acd32;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.customerArea .container>div .btn:hover {
+    background: #fff;
+    border: 3px solid #9acd32;
+    border-radius: 30px;
+    color: #9acd32;
+}
+
+.customerArea .container>div img {
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.customerArea .container>div:hover img {
+    filter: grayscale(0);
+}
+
+
+.customerArea .tabMenu {
+    display: flex;
+}
+
+.customerArea .tabMenu>li {
+    flex: 1;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.customerArea .tabMenu>li.oo {
+    background: #369;
+}
+
+.customerArea .tabMenu>li~li {
+    border-left: 1px solid#fff;
+}
+
+.customerArea .tabContent>div {
+    display: none;
+}
+
+.customerArea .tabContent>div.oo {
+    display: block;
+}
+
+.customerArea .tabContent a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3px;
+    border-bottom: 1px solid#ddd;
+}
+
+.customerArea .tabContent strong {
+    display: block;
+    width: 400px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.customerArea .tabContent span {}
+
+
+
+
+.customerArea .container>div i {
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    font-size: 70px;
+    color: #f00;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.customerArea .container>div:hover i {
+    opacity: 1;
+    animation: heart 1s infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+.footerWrap {
+    background: #333;
+    color: #f2f2f2;
+    line-height: 60px;
+}
+
+.footerWrap .top {
+    border-bottom: 1px solid #666;
+}
+
+.footerWrap .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footerWrap .container>dl {
+    display: flex;
+    padding: 0 15px;
+    gap: 40px;
+}
+
+.footerWrap .container dd {
+    position: relative;
+}
+
+.footerWrap .container dd:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #f2f2f2;
+
+    transform: translateY(-50%);
+}
+
+.footerWrap .container>div {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.footerWrap .botton {
+    padding-bottom: 50px;
+}
+
+.footerWrap .container>* {
+    padding: 0 15px;
+}
+
+.footerWrap .link select {
+    background: #333;
+    font-size: 15px;
+    padding: 4px 10px;
+    outline: none;
+    border: none;
+    border: 2px solid #f2f2f2;
+}
+
+
+
+
+.popup01 {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #333;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup01 img {
+    width: 400px;
+}
+
+.popup01 button {
+    position: absolute;
+    inset: auto 20px 20px auto;
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #333;
+    background: #f00;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
