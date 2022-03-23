@@ -864,3 +864,22 @@
     text-transform: uppercase;
     font-size: 14px;
 }
+
+
+
+.toTop {
+    position: fixed;
+    /* 어느 위치에 고정 - 화면기준*/
+    inset: auto 50px 100px auto;
+    /* 익스플로러에는 없음 */
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.toTop i {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
