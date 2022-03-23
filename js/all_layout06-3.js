@@ -74,7 +74,7 @@ $('.allProduct i:last-child').on('click', function(){
 
 //유튜브 플레이어를 쓰자
 
-jQuery("#https://www.youtube.com/watch?v=c8cNgiZDN34").YTPlayer({
+jQuery("#bgndVideo").YTPlayer({
     videoURL:'BsekcY04xvQ',
     containment:'.movieBg',
     autoPlay:true, 
@@ -86,11 +86,11 @@ jQuery("#https://www.youtube.com/watch?v=c8cNgiZDN34").YTPlayer({
 });
 
 $('.movieBg i:first-child').on('click', function(){
-    $("#https://www.youtube.com/watch?v=c8cNgiZDN34").YTPPause();
+    $("#bgndVideo").YTPPause();
 })
 
 $('.movieBg i:last-child').on('click', function(){
-    $("#https://www.youtube.com/watch?v=c8cNgiZDN34").YTPPlay();
+    $("#bgndVideo").YTPPlay();
 })
 
 
